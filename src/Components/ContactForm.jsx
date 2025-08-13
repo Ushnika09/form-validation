@@ -25,7 +25,7 @@ function ContactForm() {
           valid = false;
         }
 
-        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/;
         if (!email.trim()) {
           newErrors.email = 'Email is required';
           valid = false;

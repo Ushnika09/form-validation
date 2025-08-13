@@ -1,12 +1,59 @@
-# React + Vite
+# 🎯 Task 6 — Contact Form with JavaScript Validation
+## 📌 Overview
+This project is part of my Web Development Internship journey. The goal?
+Build a sleek Contact Form that politely refuses to submit unless you fill it out properly.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Think of it as a bouncer at the club of my inbox —
+“No empty names, no shady emails, and definitely no blank messages allowed!”
 
-Currently, two official plugins are available:
+## 🛠 Features
+📝 Name, Email, and Message fields
+🚫 Input validation before submission
+✨ Real-time error messages under inputs
+✅ Success message when all is good
+🛡 Regex-powered email check
+🎯 Prevents form submission if invalid
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📂 Project Structure
 
-## Expanding the ESLint configuration
+📁 contact-form-validation
+ ├── index.html      # HTML form layout  
+ ├── style.css       # Styling for the form  
+ ├── script.js       # Validation logic (aka the "bouncer")  
+ └── README.md       # You’re reading this  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💻 How It Works
+User types stuff into the form.
+
+JavaScript checks:
+
+Is the Name empty? ❌ Error!
+Is the Email valid? 📧 Regex says yes/no.
+Is the Message empty? 🙅‍♂️ Nope, not allowed.
+
+Errors appear right under the inputs (because we care about UX).
+
+Only valid forms get a happy green success message.
+
+## 🧠 Key Concepts Learned
+HTML form structure & attributes
+
+CSS styling for clarity & readability
+
+JavaScript DOM manipulation
+
+Event handling (submit event, event.preventDefault())
+
+Regex for email format validation
+
+Client-side vs Server-side validation basics
+
+
+## 🚀 How to Run
+Clone this repo
+
+Open index.html in your browser
+
+Start typing into the form… and watch the bouncer do its job!
+
+Built with 💻 & ☕ by Ushnika
